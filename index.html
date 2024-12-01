@@ -1,59 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raaz Katwal | Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/a3c06e4acc.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="output.css" rel="stylesheet" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raaz Katwal | Portfolio</title>
-  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://kit.fontawesome.com/a3c06e4acc.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <body class="bg-background px-[5rem] py-5">
+    <nav class="flex h-10 items-center justify-between">
+      <a href="#" class="flex w-20 items-center justify-center">
+        <svg viewBox="0 0 150 60.52385" class="looka-1j8o68f">
+          <path
+            d="M39.15081 60.52385h-7.99559l-10.5459-21.36752h-9.0295v21.36752H4.20458V39.15633L0 35.43425l4.20458-3.65316V10H28.6049l8.20237 9.512v10.13234l-8.20237 9.51199zm-9.71877-34.05018v-3.85994l-4.34243-5.16956H11.5798v14.33692h13.5098zm67.1078 34.05018h-7.71988l-4.756-12.61373H63.38573l-4.756 12.61373h-7.71988l7.9956-21.36752-3.51531-3.72208 6.13455-3.17067L69.8649 10h7.71988zM81.30687 40.53488l-7.58203-20.67825-7.58202 20.67825h15.16405zM150 35.43425l-4.2735 3.65315v12.95837l-9.512 8.47808h-16.47366l-9.512-8.47808V38.39813h7.37524V48.8751l5.30742 4.2735h10.13234l5.30742-4.96278V10h7.37524v21.71216z"
+            fill="#00FE9B"
+          />
+        </svg>
+      </a>
 
-<body class="bg-[--background-color] px-[5rem] py-5 text-white">
-  <nav class="flex justify-between items-center h-10">
-    <a href="#" class="w-20 flex items-center justify-center">
-      <svg viewBox="0 0 150 60.52385" class="looka-1j8o68f">
-        <path
-          d="M39.15081 60.52385h-7.99559l-10.5459-21.36752h-9.0295v21.36752H4.20458V39.15633L0 35.43425l4.20458-3.65316V10H28.6049l8.20237 9.512v10.13234l-8.20237 9.51199zm-9.71877-34.05018v-3.85994l-4.34243-5.16956H11.5798v14.33692h13.5098zm67.1078 34.05018h-7.71988l-4.756-12.61373H63.38573l-4.756 12.61373h-7.71988l7.9956-21.36752-3.51531-3.72208 6.13455-3.17067L69.8649 10h7.71988zM81.30687 40.53488l-7.58203-20.67825-7.58202 20.67825h15.16405zM150 35.43425l-4.2735 3.65315v12.95837l-9.512 8.47808h-16.47366l-9.512-8.47808V38.39813h7.37524V48.8751l5.30742 4.2735h10.13234l5.30742-4.96278V10h7.37524v21.71216z"
-          fill="#00FE9B" />
-      </svg>
-    </a>
-
-    <div class="flex space-x-4 uppercase items-center font-semibold">
-      <a href="#" class="text-[--accent-color]">
-        Home
-      </a>
-      <a href="#" class="hover:text-[--accent-color]">
-        About
-      </a>
-      <a href="#" class="hover:text-[--accent-color]">
-        Projects
-      </a>
-      <a href="#" class="hover:text-[--accent-color]">
-        Contact
-      </a>
-      <a href="#"><button class="bg-[--accent-color] px-8 py-2 rounded-full text-black uppercase hover:bg-[--background-color] border-2 border-[--accent-color] hover:border-[--accent-color] hover:text-white ease-in-out duration-300">Hire me</button>
-      </a>
-    </div>
-
-  </nav>
-  <main class="grid h-[90vh] grid-cols-2 place-items-center">
-    <div>
-      <h1 class="font-semibold text-8xl">
-        Hello I'm
-        <div class="my-4 text-[--accent-color]">Raj Katwal</div>
-      </h1>
-      <p class="font-mono text-gray-400">A Developer Dedicated to Crafting Beautiful, Functional Web Experiences</p>
-      <div class="mt-5 space-x-4">
-        <a href="#" class="ease-in-out duration-300 bg-[--accent-color] border-2 border-[--accent-color] hover:bg-[--background-color] hover:border-[--accent-color] hover:text-white px-8 py-2 rounded-full text-black uppercase">Hire me</a>
-        <a href="#" class="ease-in-out duration-300 bg-[--accent-color] border-2 border-[--background-color] hover:bg-[--accent-color] hover:border-[--background-color] hover:text-white px-8 py-2 rounded-full text-black uppercase">Download CV <i class="fa-solid fa-download"></i></a>
+      <div
+        class="flex items-center space-x-4 font-semibold uppercase text-white"
+      >
+        <a href="#" class="text-accent"> Home </a>
+        <a href="#" class="hover:text-accent"> About </a>
+        <a href="#" class="hover:text-accent"> Projects </a>
+        <a href="#" class="hover:text-accent"> Contact </a>
+        <a href="#"
+          ><button
+            class="rounded-full border-2 border-accent bg-accent px-8 py-2 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
+          >
+            Hire me
+          </button>
+        </a>
       </div>
-    </div>
-    <img src="img/raj.jpeg" alt="image" class="object-cover w-[30rem] h-[30rem] rounded-full">
-  </main>
-  
-</body>
-
+    </nav>
+    <main class="grid h-[90vh] grid-cols-2 place-items-center">
+      <div>
+        <h1 class="text-8xl font-semibold text-white">
+          Hello I'm
+          <div class="my-4 text-accent">Raj Katwal</div>
+        </h1>
+        <p class="font-mono text-gray-400">
+          A Developer Dedicated to Crafting Beautiful, Functional Web
+          Experiences
+        </p>
+        <div class="mt-5 space-x-4">
+          <a
+            href="#"
+            class="rounded-full border-2 border-accent bg-accent px-8 py-2 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
+            >Hire me</a
+          >
+          <a
+            href="#"
+            class="rounded-full border-2 border-accent bg-background px-8 py-2 uppercase text-white duration-300 ease-in-out hover:border-accent hover:bg-accent hover:text-black"
+            >Download CV <i class="fa-solid fa-download"></i
+          ></a>
+          <a
+            href="#"
+            class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="#"
+            class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="#"
+            class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </div>
+      <img
+        src="img/raj.jpeg"
+        alt="image"
+        class="h-[30rem] w-[30rem] rounded-full object-cover"
+      />
+    </main>
+  </body>
 </html>
