@@ -8,6 +8,8 @@
       src="https://kit.fontawesome.com/a3c06e4acc.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@2.0.8/dist/lottie-player.js"></script>
+
     <link href="output.css" rel="stylesheet" />
     <script src="index.js" defer></script>
   </head>
@@ -18,7 +20,7 @@
     ></div>
     <nav
       id="navbar"
-      class="fixed left-0 top-0 flex h-10 w-screen items-center justify-between px-20 py-10 z-50"
+      class="fixed left-0 top-0 z-50 flex h-10 w-screen items-center justify-between px-20 py-10"
     >
       <a href="#" class="flex w-20 items-center justify-center">
         <svg viewBox="0 0 150 60.52385" class="looka-1j8o68f">
@@ -115,7 +117,16 @@
           >Download CV <i class="fa-solid fa-download"></i
         ></a>
       </div>
-      <img src="img/coding.png" alt="Coding" />
+      <lottie-player
+        src="https://lottie.host/a475e4e5-ca10-491c-96c5-7a73c9d629e7/2ts5KEv26A.json"
+        background="##FFFFFF"
+        speed="1"
+        style="width: 500px; height: 380px"
+        loop
+        autoplay
+        direction="1"
+        mode="normal"
+      ></lottie-player>
 
       <div class="col-span-2 mt-5 flex space-x-16">
         <div>
@@ -218,12 +229,16 @@
         My Projects
       </h1>
       <div class="grid grid-cols-3 gap-4">
-        <div class="rounded-xl bg-[#2A2930] p-3 text-center flex flex-col justify-center gap-3">
+        <div
+          class="flex flex-col justify-center gap-3 rounded-xl bg-[#2A2930] p-3 text-center"
+        >
           <img src="img/allora.png" alt="E-commerce" class="rounded-2xl" />
           <h3 class="my-3 text-xl">Allora</h3>
           <p>A modern E-commerce platform built with Laravel.</p>
-          <div class="my-4 flex gap-2 items-center">
-            <a href="https://github.com/Raazkatwal/Allora" target="_blank"
+          <div class="my-4 flex items-center gap-2">
+            <a
+              href="https://github.com/Raazkatwal/Allora"
+              target="_blank"
               class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
             >
               View More
@@ -235,12 +250,15 @@
             </button>
           </div>
         </div>
-        <div class="rounded-xl bg-[#2A2930] p-3 text-center flex flex-col justify-center gap-3">
+        <div
+          class="flex flex-col justify-center gap-3 rounded-xl bg-[#2A2930] p-3 text-center"
+        >
           <img src="img/samparka.png" alt="Chat app" class="rounded-2xl" />
           <h3 class="my-3 text-xl">Samparka</h3>
           <p>A Simple chatting platform built with Laravel and Reverb.</p>
-          <div class="my-4 flex gap-2 items-center">
-            <a href="https://github.com/Raazkatwal/Samparka"
+          <div class="my-4 flex items-center gap-2">
+            <a
+              href="https://github.com/Raazkatwal/Samparka"
               class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
             >
               View More
@@ -252,30 +270,79 @@
             </button>
           </div>
         </div>
-        <div class="rounded-xl bg-[#2A2930] p-3 text-center flex flex-col justify-center gap-3">
+        <div
+          class="flex flex-col justify-center gap-3 rounded-xl bg-[#2A2930] p-3 text-center"
+        >
           <img src="img/calculator.png" alt="Calculator" class="rounded-2xl" />
           <h3 class="my-3 text-xl">Tip Calculator</h3>
           <p>A simple Tip Calculator built with JavaScript.</p>
-          <div class="my-4 flex gap-2 items-center">
-            <a href="https://github.com/Raazkatwal/tip-calculator" target="_blank"
+          <div class="my-4 flex items-center gap-2">
+            <a
+              href="https://github.com/Raazkatwal/tip-calculator"
+              target="_blank"
               class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
             >
               View More
             </a>
-            <a href="https://raazkatwal.github.io/tip-calculator/" target="_blank"
+            <a
+              href="https://raazkatwal.github.io/tip-calculator/"
+              target="_blank"
               class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
             >
               View Live
             </a>
           </div>
         </div>
-        <div class="col-span-3 flex justify-center items-center m-4">
-          <a href="https://github.com/Raazkatwal?tab=repositories" target="_blank"
-          class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+        <div class="col-span-3 m-4 flex items-center justify-center">
+          <a
+            href="https://github.com/Raazkatwal?tab=repositories"
+            target="_blank"
+            class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
           >
-          View More <i class="fa-brands fa-github"></i>
-        </a>
+            View More <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
       </div>
+    </section>
+    <section id="contact" class="text-white">
+      <h1 class="col-span-2 m-8 text-center text-5xl font-medium text-accent">
+        Contact Me
+      </h1>
+      <div class="grid grid-cols-2">
+        <lottie-player
+          class="w-full"
+          src="https://lottie.host/7f13c2e6-b04f-4353-aab8-0f80e6397385/wARnFj8a2k.json"
+          background="##FFFFFF"
+          speed="1"
+          loop
+          autoplay
+          direction="1"
+          mode="normal"
+        ></lottie-player>
+        <form action="" class="flex flex-col gap-5">
+          <input
+            type="text"
+            placeholder="Enter your Name"
+            class="rounded-md bg-slate-700 px-4 py-3 text-xl outline-none"
+          />
+          <input
+            type="text"
+            placeholder="Enter your E-mail"
+            class="rounded-md bg-slate-700 px-4 py-3 text-xl outline-none"
+          />
+          <textarea
+            cols="8"
+            rows="8"
+            placeholder="Enter our Message"
+            class="rounded-md bg-slate-700 px-4 py-3 text-xl outline-none"
+          ></textarea>
+          <button
+            type="submit"
+            class="rounded-full w-44 border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
     </section>
   </body>
