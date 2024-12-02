@@ -9,10 +9,17 @@
       crossorigin="anonymous"
     ></script>
     <link href="output.css" rel="stylesheet" />
+    <script src="index.js" defer></script>
   </head>
 
-  <body class="bg-background px-[5rem] py-5">
-    <nav class="flex h-10 items-center justify-between">
+  <body class="bg-background px-20 py-5 font-[ubuntu]">
+    <div
+      class="absolute -left-20 -top-32 z-[999] h-96 w-96 rounded-full bg-gradient-to-tl from-accent to-background opacity-50 blur-3xl"
+    ></div>
+    <nav
+      id="navbar"
+      class="fixed left-0 top-0 flex h-10 w-screen items-center justify-between px-20 py-10"
+    >
       <a href="#" class="flex w-20 items-center justify-center">
         <svg viewBox="0 0 150 60.52385" class="looka-1j8o68f">
           <path
@@ -26,8 +33,8 @@
         class="flex items-center space-x-4 font-semibold uppercase text-white"
       >
         <a href="#" class="text-accent"> Home </a>
-        <a href="#" class="hover:text-accent"> About </a>
-        <a href="#" class="hover:text-accent"> Projects </a>
+        <a href="#about" class="hover:text-accent"> About </a>
+        <a href="#projects" class="hover:text-accent"> Projects </a>
         <a href="#" class="hover:text-accent"> Contact </a>
         <a href="#"
           ><button
@@ -38,7 +45,7 @@
         </a>
       </div>
     </nav>
-    <main class="grid h-[90vh] grid-cols-2 place-items-center">
+    <main class="mt-20 grid h-[90vh] grid-cols-2 place-items-center">
       <div>
         <h1 class="text-8xl font-semibold text-white">
           Hello I'm
@@ -51,12 +58,13 @@
         <div class="mt-5 space-x-4">
           <a
             href="#"
-            class="rounded-full border-2 border-accent bg-accent px-8 py-2 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
+            class="rounded-full border-2 border-accent bg-accent px-8 py-4 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
             >Hire me</a
           >
           <a
-            href="#"
-            class="rounded-full border-2 border-accent bg-background px-8 py-2 uppercase text-white duration-300 ease-in-out hover:border-accent hover:bg-accent hover:text-black"
+            href="Raj_cv.pdf"
+            download="Raj_cv.pdf"
+            class="rounded-full border-2 border-accent bg-background px-8 py-4 uppercase text-white duration-300 ease-in-out hover:border-accent hover:bg-accent hover:text-black"
             >Download CV <i class="fa-solid fa-download"></i
           ></a>
           <a
@@ -82,5 +90,128 @@
         class="h-[30rem] w-[30rem] rounded-full object-cover"
       />
     </main>
+    <section
+      class="grid grid-cols-2 place-items-center gap-2 text-white"
+      id="about"
+    >
+      <h1 class="col-span-2 text-5xl font-medium text-accent">About Me</h1>
+      <div>
+        <p class="mb-10 text-justify text-lg">
+          Hello! I'm Raj, a passionate developer dedicated to crafting
+          beautiful, functional web experiences. I have a keen interest in
+          building intuitive and impactful digital solutions. My journey in web
+          development has equipped me with solid skills in HTML, CSS,
+          JavaScript, and PHP. I'm currently diving deeper into the world of
+          full-stack development, with a focus on Laravel and Livewire. My goal
+          is to create seamless applications that provide value to users and
+          businesses alike. Whether you have a project to discuss or just want
+          to brainstorm ideas, I'm always open to connecting and collaborating
+          on exciting new ventures.
+        </p>
+        <a
+          href="Raj_cv.pdf"
+          download="Raj_cv.pdf"
+          class="rounded-full border-2 border-accent bg-background px-8 py-4 uppercase text-white duration-300 ease-in-out hover:border-accent hover:bg-accent hover:text-black"
+          >Download CV <i class="fa-solid fa-download"></i
+        ></a>
+      </div>
+      <img src="img/coding.png" alt="Coding" />
+
+      <div class="col-span-2 mt-5 flex space-x-16">
+        <div>
+          <div
+            class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_306deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
+          >
+            <span class="col-[1_/_-1] row-[1_/_-1] text-white">85%</span>
+          </div>
+          <p class="mt-5 text-center">HTML & CSS</p>
+        </div>
+        <div>
+          <div
+            class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_234deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
+          >
+            <span class="col-[1_/_-1] row-[1_/_-1] text-white">65%</span>
+          </div>
+          <p class="m-5 text-center">JS</p>
+        </div>
+        <div>
+          <div
+            class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_270deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
+          >
+            <span class="col-[1_/_-1] row-[1_/_-1] text-white">75%</span>
+          </div>
+          <p class="m-5 text-center">PHP</p>
+        </div>
+        <div>
+          <div
+            class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_216deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
+          >
+            <span class="col-[1_/_-1] row-[1_/_-1] text-white">60%</span>
+          </div>
+          <p class="m-5 text-center">Laravel</p>
+        </div>
+      </div>
+    </section>
+    <section
+      class="my-14 grid grid-cols-2 place-items-center gap-16 text-white"
+    >
+      <h1 class="col-span-2 text-5xl font-medium text-accent">My Education</h1>
+      <div class="flex gap-3">
+        <div
+          class="relative top-full grid h-20 w-36 place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
+        >
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div>
+          <span
+            class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
+            >2014 - 2020</span
+          >
+          <h3 class="text-2xl font-medium">School</h3>
+          <p>
+            I have completed my school in Pokhariya secondary school in Nepal.
+            It is the place where my interest in coding developed.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-3">
+        <div
+          class="relative top-full grid h-20 w-[14.5rem] place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
+        >
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div>
+          <span
+            class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
+            >2020 - 2022</span
+          >
+          <h3 class="text-2xl font-medium">High School</h3>
+          <p>
+            I completed my high school education at Pokhariya Secondary School
+            in Nepal. This pivotal period not only equipped me with academic
+            knowledge but also imparted invaluable life lessons.
+          </p>
+        </div>
+      </div>
+      <div class="flex gap-3">
+        <div
+          class="relative top-full grid h-20 w-[12rem] place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
+        >
+          <i class="fa-solid fa-graduation-cap"></i>
+        </div>
+        <div>
+          <span
+            class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
+            >2023 - Present</span
+          >
+          <h3 class="text-2xl font-medium">Bachelor</h3>
+          <p>
+            I am currently pursuing my bachelor's degree in B.Sc. CSIT at
+            Himalaya Darshan College, Brt, honing my skills in computer science
+            and information technology.
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
