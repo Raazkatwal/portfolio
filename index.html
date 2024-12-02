@@ -14,336 +14,400 @@
     <script src="index.js" defer></script>
   </head>
 
-  <body class="bg-background px-20 py-5 font-[ubuntu]">
-    <div
-      class="absolute -left-20 -top-32 z-[999] h-96 w-96 rounded-full bg-gradient-to-tl from-accent to-background opacity-50 blur-3xl"
-    ></div>
-    <nav
-      id="navbar"
-      class="fixed left-0 top-0 z-50 flex h-10 w-screen items-center justify-between px-20 py-10"
-    >
-      <a href="#" class="flex w-20 items-center justify-center">
-        <svg viewBox="0 0 150 60.52385" class="looka-1j8o68f">
-          <path
-            d="M39.15081 60.52385h-7.99559l-10.5459-21.36752h-9.0295v21.36752H4.20458V39.15633L0 35.43425l4.20458-3.65316V10H28.6049l8.20237 9.512v10.13234l-8.20237 9.51199zm-9.71877-34.05018v-3.85994l-4.34243-5.16956H11.5798v14.33692h13.5098zm67.1078 34.05018h-7.71988l-4.756-12.61373H63.38573l-4.756 12.61373h-7.71988l7.9956-21.36752-3.51531-3.72208 6.13455-3.17067L69.8649 10h7.71988zM81.30687 40.53488l-7.58203-20.67825-7.58202 20.67825h15.16405zM150 35.43425l-4.2735 3.65315v12.95837l-9.512 8.47808h-16.47366l-9.512-8.47808V38.39813h7.37524V48.8751l5.30742 4.2735h10.13234l5.30742-4.96278V10h7.37524v21.71216z"
-            fill="#00FE9B"
-          />
-        </svg>
-      </a>
-
+  <body class="bg-background font-[ubuntu]">
+    <main class="px-20 py-5">
       <div
-        class="flex items-center space-x-4 font-semibold uppercase text-white"
+        class="absolute -left-20 -top-32 z-[999] h-96 w-96 rounded-full bg-gradient-to-tl from-accent to-background opacity-50 blur-3xl"
+      ></div>
+      <nav
+        id="navbar"
+        class="fixed left-0 top-0 z-50 flex h-10 w-screen items-center justify-between px-20 py-10"
       >
-        <a href="#" class="text-accent"> Home </a>
-        <a href="#about" class="hover:text-accent"> About </a>
-        <a href="#projects" class="hover:text-accent"> Projects </a>
-        <a href="#contact" class="hover:text-accent"> Contact </a>
-        <a href="#contact"
-          ><button
-            class="rounded-full border-2 border-accent bg-accent px-8 py-2 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
-          >
-            Hire me
-          </button>
+        <a href="#home" class="flex w-20 items-center justify-center">
+          <svg viewBox="0 0 150 60.52385" class="looka-1j8o68f">
+            <path
+              d="M39.15081 60.52385h-7.99559l-10.5459-21.36752h-9.0295v21.36752H4.20458V39.15633L0 35.43425l4.20458-3.65316V10H28.6049l8.20237 9.512v10.13234l-8.20237 9.51199zm-9.71877-34.05018v-3.85994l-4.34243-5.16956H11.5798v14.33692h13.5098zm67.1078 34.05018h-7.71988l-4.756-12.61373H63.38573l-4.756 12.61373h-7.71988l7.9956-21.36752-3.51531-3.72208 6.13455-3.17067L69.8649 10h7.71988zM81.30687 40.53488l-7.58203-20.67825-7.58202 20.67825h15.16405zM150 35.43425l-4.2735 3.65315v12.95837l-9.512 8.47808h-16.47366l-9.512-8.47808V38.39813h7.37524V48.8751l5.30742 4.2735h10.13234l5.30742-4.96278V10h7.37524v21.71216z"
+              fill="#00FE9B"
+            />
+          </svg>
         </a>
-      </div>
-    </nav>
-    <main class="mt-20 grid h-[90vh] grid-cols-2 place-items-center">
-      <div>
-        <h1 class="text-8xl font-semibold text-white">
-          Hello I'm
-          <div class="my-4 text-accent">Raj Katwal</div>
-        </h1>
-        <p class="font-mono text-gray-400">
-          A Developer Dedicated to Crafting Beautiful, Functional Web
-          Experiences
-        </p>
-        <div class="mt-5 space-x-4">
-          <a
-            href="#"
-            class="rounded-full border-2 border-accent bg-accent px-8 py-4 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
-            >Hire me</a
-          >
+
+        <div
+          class="flex items-center space-x-4 font-semibold uppercase text-white"
+        >
+          <a href="#home" class="text-accent"> Home </a>
+          <a href="#about" class="hover:text-accent"> About </a>
+          <a href="#projects" class="hover:text-accent"> Projects </a>
+          <a href="#contact" class="hover:text-accent"> Contact </a>
+          <a href="#contact"
+            ><button
+              class="rounded-full border-2 border-accent bg-accent px-8 py-2 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
+            >
+              Hire me
+            </button>
+          </a>
+        </div>
+      </nav>
+      <main
+        class="mt-20 grid h-[90vh] grid-cols-2 place-items-center"
+        id="home"
+      >
+        <div>
+          <h1 class="text-8xl font-semibold text-white">
+            Hello I'm
+            <div class="my-4 text-accent">Raj Katwal</div>
+          </h1>
+          <p class="font-mono text-gray-400">
+            A Developer Dedicated to Crafting Beautiful, Functional Web
+            Experiences
+          </p>
+          <div class="mt-5 space-x-4">
+            <a
+              href="#"
+              class="rounded-full border-2 border-accent bg-accent px-8 py-4 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
+              >Hire me</a
+            >
+            <a
+              href="Raj_cv.pdf"
+              download="Raj_cv.pdf"
+              class="rounded-full border-2 border-accent bg-background px-8 py-4 uppercase text-white duration-300 ease-in-out hover:border-accent hover:bg-accent hover:text-black"
+              >Download CV <i class="fa-solid fa-download"></i
+            ></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=100090441970224"
+              target="_blank"
+              class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+            <a
+              href="https://github.com/Raazkatwal"
+              target="_blank"
+              class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://wa.me/+9779816314773"
+              target="_blank"
+              class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+        <img
+          src="img/raj.jpeg"
+          alt="image"
+          class="h-[30rem] w-[30rem] rounded-full object-cover"
+        />
+      </main>
+      <section
+        class="grid grid-cols-2 place-items-center gap-2 text-white"
+        id="about"
+      >
+        <h1 class="col-span-2 text-5xl font-medium text-accent">About Me</h1>
+        <div>
+          <p class="mb-10 text-justify text-lg">
+            Hello! I'm Raj, a passionate developer dedicated to crafting
+            beautiful, functional web experiences. I have a keen interest in
+            building intuitive and impactful digital solutions. My journey in
+            web development has equipped me with solid skills in HTML, CSS,
+            JavaScript, and PHP. I'm currently diving deeper into the world of
+            full-stack development, with a focus on Laravel and Livewire. My
+            goal is to create seamless applications that provide value to users
+            and businesses alike. Whether you have a project to discuss or just
+            want to brainstorm ideas, I'm always open to connecting and
+            collaborating on exciting new ventures.
+          </p>
           <a
             href="Raj_cv.pdf"
             download="Raj_cv.pdf"
             class="rounded-full border-2 border-accent bg-background px-8 py-4 uppercase text-white duration-300 ease-in-out hover:border-accent hover:bg-accent hover:text-black"
             >Download CV <i class="fa-solid fa-download"></i
           ></a>
-          <a
-            href="#"
-            class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
-            ><i class="fa-brands fa-facebook"></i
-          ></a>
-          <a
-            href="#"
-            class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="#"
-            class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
-            ><i class="fa-brands fa-linkedin"></i
-          ></a>
         </div>
-      </div>
-      <img
-        src="img/raj.jpeg"
-        alt="image"
-        class="h-[30rem] w-[30rem] rounded-full object-cover"
-      />
-    </main>
-    <section
-      class="grid grid-cols-2 place-items-center gap-2 text-white"
-      id="about"
-    >
-      <h1 class="col-span-2 text-5xl font-medium text-accent">About Me</h1>
-      <div>
-        <p class="mb-10 text-justify text-lg">
-          Hello! I'm Raj, a passionate developer dedicated to crafting
-          beautiful, functional web experiences. I have a keen interest in
-          building intuitive and impactful digital solutions. My journey in web
-          development has equipped me with solid skills in HTML, CSS,
-          JavaScript, and PHP. I'm currently diving deeper into the world of
-          full-stack development, with a focus on Laravel and Livewire. My goal
-          is to create seamless applications that provide value to users and
-          businesses alike. Whether you have a project to discuss or just want
-          to brainstorm ideas, I'm always open to connecting and collaborating
-          on exciting new ventures.
-        </p>
-        <a
-          href="Raj_cv.pdf"
-          download="Raj_cv.pdf"
-          class="rounded-full border-2 border-accent bg-background px-8 py-4 uppercase text-white duration-300 ease-in-out hover:border-accent hover:bg-accent hover:text-black"
-          >Download CV <i class="fa-solid fa-download"></i
-        ></a>
-      </div>
-      <lottie-player
-        src="https://lottie.host/a475e4e5-ca10-491c-96c5-7a73c9d629e7/2ts5KEv26A.json"
-        background="##FFFFFF"
-        speed="1"
-        style="width: 500px; height: 380px"
-        loop
-        autoplay
-        direction="1"
-        mode="normal"
-      ></lottie-player>
-
-      <div class="col-span-2 mt-5 flex space-x-16">
-        <div>
-          <div
-            class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_306deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
-          >
-            <span class="col-[1_/_-1] row-[1_/_-1] text-white">85%</span>
-          </div>
-          <p class="mt-5 text-center">HTML & CSS</p>
-        </div>
-        <div>
-          <div
-            class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_234deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
-          >
-            <span class="col-[1_/_-1] row-[1_/_-1] text-white">65%</span>
-          </div>
-          <p class="m-5 text-center">JS</p>
-        </div>
-        <div>
-          <div
-            class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_270deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
-          >
-            <span class="col-[1_/_-1] row-[1_/_-1] text-white">75%</span>
-          </div>
-          <p class="m-5 text-center">PHP</p>
-        </div>
-        <div>
-          <div
-            class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_216deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
-          >
-            <span class="col-[1_/_-1] row-[1_/_-1] text-white">60%</span>
-          </div>
-          <p class="m-5 text-center">Laravel</p>
-        </div>
-      </div>
-    </section>
-    <section
-      class="my-14 grid grid-cols-2 place-items-center gap-16 text-white"
-    >
-      <h1 class="col-span-2 text-5xl font-medium text-accent">My Education</h1>
-      <div class="flex gap-3">
-        <div
-          class="relative top-full grid h-20 w-36 place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
-        >
-          <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-        <div>
-          <span
-            class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
-            >2014 - 2020</span
-          >
-          <h3 class="text-2xl font-medium">School</h3>
-          <p>
-            I have completed my school in Pokhariya secondary school in Nepal.
-            It is the place where my interest in coding developed.
-          </p>
-        </div>
-      </div>
-      <div class="flex gap-3">
-        <div
-          class="relative top-full grid h-20 w-[14.5rem] place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
-        >
-          <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-        <div>
-          <span
-            class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
-            >2020 - 2022</span
-          >
-          <h3 class="text-2xl font-medium">High School</h3>
-          <p>
-            I completed my high school education at Pokhariya Secondary School
-            in Nepal. This pivotal period not only equipped me with academic
-            knowledge but also imparted invaluable life lessons.
-          </p>
-        </div>
-      </div>
-      <div class="flex gap-3">
-        <div
-          class="relative top-full grid h-20 w-[12rem] place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
-        >
-          <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-        <div>
-          <span
-            class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
-            >2023 - Present</span
-          >
-          <h3 class="text-2xl font-medium">Bachelor</h3>
-          <p>
-            I am currently pursuing my bachelor's degree in B.Sc. CSIT at
-            Himalaya Darshan College, Brt, honing my skills in computer science
-            and information technology.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="text-white">
-      <h1 class="col-span-2 m-8 text-center text-5xl font-medium text-accent">
-        My Projects
-      </h1>
-      <div class="grid grid-cols-3 gap-4">
-        <div
-          class="flex flex-col justify-center gap-3 rounded-xl bg-[#2A2930] p-3 text-center"
-        >
-          <img src="img/allora.png" alt="E-commerce" class="rounded-2xl" />
-          <h3 class="my-3 text-xl">Allora</h3>
-          <p>A modern E-commerce platform built with Laravel.</p>
-          <div class="my-4 flex items-center gap-2">
-            <a
-              href="https://github.com/Raazkatwal/Allora"
-              target="_blank"
-              class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
-            >
-              View More
-            </a>
-            <button
-              class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
-            >
-              View Live
-            </button>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-center gap-3 rounded-xl bg-[#2A2930] p-3 text-center"
-        >
-          <img src="img/samparka.png" alt="Chat app" class="rounded-2xl" />
-          <h3 class="my-3 text-xl">Samparka</h3>
-          <p>A Simple chatting platform built with Laravel and Reverb.</p>
-          <div class="my-4 flex items-center gap-2">
-            <a
-              href="https://github.com/Raazkatwal/Samparka"
-              class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
-            >
-              View More
-            </a>
-            <button
-              class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
-            >
-              View Live
-            </button>
-          </div>
-        </div>
-        <div
-          class="flex flex-col justify-center gap-3 rounded-xl bg-[#2A2930] p-3 text-center"
-        >
-          <img src="img/calculator.png" alt="Calculator" class="rounded-2xl" />
-          <h3 class="my-3 text-xl">Tip Calculator</h3>
-          <p>A simple Tip Calculator built with JavaScript.</p>
-          <div class="my-4 flex items-center gap-2">
-            <a
-              href="https://github.com/Raazkatwal/tip-calculator"
-              target="_blank"
-              class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
-            >
-              View More
-            </a>
-            <a
-              href="https://raazkatwal.github.io/tip-calculator/"
-              target="_blank"
-              class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
-            >
-              View Live
-            </a>
-          </div>
-        </div>
-        <div class="col-span-3 m-4 flex items-center justify-center">
-          <a
-            href="https://github.com/Raazkatwal?tab=repositories"
-            target="_blank"
-            class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
-          >
-            View More <i class="fa-brands fa-github"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="contact" class="text-white">
-      <h1 class="col-span-2 m-8 text-center text-5xl font-medium text-accent">
-        Contact Me
-      </h1>
-      <div class="grid grid-cols-2">
         <lottie-player
-          class="w-full"
-          src="https://lottie.host/7f13c2e6-b04f-4353-aab8-0f80e6397385/wARnFj8a2k.json"
+          src="https://lottie.host/251cfe1d-3f24-425f-ab49-916626a54c28/l9MBsGiREf.json"
           background="##FFFFFF"
           speed="1"
+          style="width: 500px; height: 380px"
           loop
           autoplay
           direction="1"
           mode="normal"
         ></lottie-player>
-        <form action="" class="flex flex-col gap-5">
-          <input
-            type="text"
-            placeholder="Enter your Name"
-            class="rounded-md bg-slate-700 px-4 py-3 text-xl outline-none"
-          />
-          <input
-            type="text"
-            placeholder="Enter your E-mail"
-            class="rounded-md bg-slate-700 px-4 py-3 text-xl outline-none"
-          />
-          <textarea
-            cols="8"
-            rows="8"
-            placeholder="Enter our Message"
-            class="rounded-md bg-slate-700 px-4 py-3 text-xl outline-none"
-          ></textarea>
-          <button
-            type="submit"
-            class="rounded-full w-44 border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+
+        <div class="col-span-2 mt-5 flex space-x-16">
+          <div>
+            <div
+              class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_306deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
+            >
+              <span class="col-[1_/_-1] row-[1_/_-1] text-white">85%</span>
+            </div>
+            <p class="mt-5 text-center">HTML & CSS</p>
+          </div>
+          <div>
+            <div
+              class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_234deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
+            >
+              <span class="col-[1_/_-1] row-[1_/_-1] text-white">65%</span>
+            </div>
+            <p class="m-5 text-center">JS</p>
+          </div>
+          <div>
+            <div
+              class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_270deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
+            >
+              <span class="col-[1_/_-1] row-[1_/_-1] text-white">75%</span>
+            </div>
+            <p class="m-5 text-center">PHP</p>
+          </div>
+          <div>
+            <div
+              class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_216deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
+            >
+              <span class="col-[1_/_-1] row-[1_/_-1] text-white">60%</span>
+            </div>
+            <p class="m-5 text-center">Laravel</p>
+          </div>
+        </div>
+      </section>
+      <section
+        class="my-14 grid grid-cols-2 place-items-center gap-16 text-white"
+      >
+        <h1 class="col-span-2 text-5xl font-medium text-accent">
+          My Education
+        </h1>
+        <div class="flex gap-3">
+          <div
+            class="relative top-full grid h-20 w-36 place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
           >
-            Send Message
-          </button>
-        </form>
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <span
+              class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
+              >2014 - 2020</span
+            >
+            <h3 class="text-2xl font-medium">School</h3>
+            <p>
+              I have completed my school in Pokhariya secondary school in Nepal.
+              It is the place where my interest in coding developed.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div
+            class="relative top-full grid h-20 w-[14.5rem] place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <span
+              class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
+              >2020 - 2022</span
+            >
+            <h3 class="text-2xl font-medium">High School</h3>
+            <p>
+              I completed my high school education at Pokhariya Secondary School
+              in Nepal. This pivotal period not only equipped me with academic
+              knowledge but also imparted invaluable life lessons.
+            </p>
+          </div>
+        </div>
+        <div class="flex gap-3">
+          <div
+            class="relative top-full grid h-20 w-[12rem] place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div>
+            <span
+              class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
+              >2023 - Present</span
+            >
+            <h3 class="text-2xl font-medium">Bachelor</h3>
+            <p>
+              I am currently pursuing my bachelor's degree in B.Sc. CSIT at
+              Himalaya Darshan College, Brt, honing my skills in computer
+              science and information technology.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section id="projects" class="text-white">
+        <h1 class="col-span-2 m-8 text-center text-5xl font-medium text-accent">
+          My Projects
+        </h1>
+        <div class="grid grid-cols-3 gap-4">
+          <div
+            class="flex flex-col justify-center gap-3 rounded-xl bg-[#2A2930] p-3 text-center"
+          >
+            <img src="img/allora.png" alt="E-commerce" class="rounded-2xl" />
+            <h3 class="my-3 text-xl">Allora</h3>
+            <p>A modern E-commerce platform built with Laravel.</p>
+            <div class="my-4 flex items-center gap-2">
+              <a
+                href="https://github.com/Raazkatwal/Allora"
+                target="_blank"
+                class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+              >
+                View More
+              </a>
+              <button
+                class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
+              >
+                View Live
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center gap-3 rounded-xl bg-[#2A2930] p-3 text-center"
+          >
+            <img src="img/samparka.png" alt="Chat app" class="rounded-2xl" />
+            <h3 class="my-3 text-xl">Samparka</h3>
+            <p>A Simple chatting platform built with Laravel and Reverb.</p>
+            <div class="my-4 flex items-center gap-2">
+              <a
+                href="https://github.com/Raazkatwal/Samparka"
+                class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+              >
+                View More
+              </a>
+              <button
+                class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
+              >
+                View Live
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col justify-center gap-3 rounded-xl bg-[#2A2930] p-3 text-center"
+          >
+            <img
+              src="img/calculator.png"
+              alt="Calculator"
+              class="rounded-2xl"
+            />
+            <h3 class="my-3 text-xl">Tip Calculator</h3>
+            <p>A simple Tip Calculator built with JavaScript.</p>
+            <div class="my-4 flex items-center gap-2">
+              <a
+                href="https://github.com/Raazkatwal/tip-calculator"
+                target="_blank"
+                class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+              >
+                View More
+              </a>
+              <a
+                href="https://raazkatwal.github.io/tip-calculator/"
+                target="_blank"
+                class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
+              >
+                View Live
+              </a>
+            </div>
+          </div>
+          <div class="col-span-3 m-4 flex items-center justify-center">
+            <a
+              href="https://github.com/Raazkatwal?tab=repositories"
+              target="_blank"
+              class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+            >
+              View More <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="text-white">
+        <h1 class="col-span-2 m-8 text-center text-5xl font-medium text-accent">
+          Contact Me
+        </h1>
+        <div class="grid grid-cols-2">
+          <lottie-player
+            class="w-full"
+            src="https://lottie.host/44282e9a-f4a3-4e53-8f67-fa29eae520be/NRKcMt6YKL.json"
+            background="##FFFFFF"
+            speed="1"
+            loop
+            autoplay
+            direction="1"
+            mode="normal"
+          ></lottie-player>
+          <form action="" class="flex flex-col gap-5">
+            <input
+              type="text"
+              placeholder="Enter your Name"
+              class="rounded-md bg-slate-700 px-4 py-3 text-xl outline-none"
+            />
+            <input
+              type="text"
+              placeholder="Enter your E-mail"
+              class="rounded-md bg-slate-700 px-4 py-3 text-xl outline-none"
+            />
+            <textarea
+              cols="8"
+              rows="8"
+              placeholder="Enter our Message"
+              class="rounded-md bg-slate-700 px-4 py-3 text-xl outline-none"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-44 rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="mt-16 bg-zinc-700 px-20 py-5 text-white">
+      <div class="flex justify-between">
+        <div class="space-y-2">
+          <a href="#home" class="flex w-20 items-center justify-center">
+            <svg viewBox="0 0 150 60.52385" class="looka-1j8o68f">
+              <path
+                d="M39.15081 60.52385h-7.99559l-10.5459-21.36752h-9.0295v21.36752H4.20458V39.15633L0 35.43425l4.20458-3.65316V10H28.6049l8.20237 9.512v10.13234l-8.20237 9.51199zm-9.71877-34.05018v-3.85994l-4.34243-5.16956H11.5798v14.33692h13.5098zm67.1078 34.05018h-7.71988l-4.756-12.61373H63.38573l-4.756 12.61373h-7.71988l7.9956-21.36752-3.51531-3.72208 6.13455-3.17067L69.8649 10h7.71988zM81.30687 40.53488l-7.58203-20.67825-7.58202 20.67825h15.16405zM150 35.43425l-4.2735 3.65315v12.95837l-9.512 8.47808h-16.47366l-9.512-8.47808V38.39813h7.37524V48.8751l5.30742 4.2735h10.13234l5.30742-4.96278V10h7.37524v21.71216z"
+                fill="#00FE9B"
+              />
+            </svg>
+          </a>
+          <div><i class="fa-solid fa-envelope"></i> raazkatwal5@gmail.com</div>
+          <div>
+            <i class="fa-solid fa-location-dot"></i> Biratnagar-8, Morang
+          </div>
+        </div>
+<div class="flex items-center space-x-4">
+          <a
+            href="https://www.facebook.com/profile.php?id=100090441970224"
+            class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a
+            href="https://github.com/Raazkatwal"
+            target="_blank"
+            class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://wa.me/+9779816314773"
+            target="_blank"
+            class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+            ><i class="fa-brands fa-whatsapp"></i
+          ></a><a
+            href="mailto:raazkatwal5@gmail.com"
+            target="_blank"
+            class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+        <div class="flex items-center space-x-4">
+          <a href="#home" class="hover:text-accent"> Home </a>
+          <a href="#about" class="hover:text-accent"> About </a>
+          <a href="#projects" class="hover:text-accent"> Projects </a>
+          <a href="#contact" class="hover:text-accent"> Contact </a>
+        </div>
+        
       </div>
-    </section>
+      <div class="h-10 mt-8 text-center">&copy; 2024 Raj Katwal | All rights reserved.</div>
+    </footer>
   </body>
 </html>
