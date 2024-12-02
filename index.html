@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Raaz Katwal | Portfolio</title>
+    <title>Raj Katwal | Portfolio</title>
     <script
       src="https://kit.fontawesome.com/a3c06e4acc.js"
       crossorigin="anonymous"
@@ -18,7 +18,7 @@
     ></div>
     <nav
       id="navbar"
-      class="fixed left-0 top-0 flex h-10 w-screen items-center justify-between px-20 py-10"
+      class="fixed left-0 top-0 flex h-10 w-screen items-center justify-between px-20 py-10 z-50"
     >
       <a href="#" class="flex w-20 items-center justify-center">
         <svg viewBox="0 0 150 60.52385" class="looka-1j8o68f">
@@ -35,8 +35,8 @@
         <a href="#" class="text-accent"> Home </a>
         <a href="#about" class="hover:text-accent"> About </a>
         <a href="#projects" class="hover:text-accent"> Projects </a>
-        <a href="#" class="hover:text-accent"> Contact </a>
-        <a href="#"
+        <a href="#contact" class="hover:text-accent"> Contact </a>
+        <a href="#contact"
           ><button
             class="rounded-full border-2 border-accent bg-accent px-8 py-2 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
           >
@@ -211,6 +211,71 @@
             and information technology.
           </p>
         </div>
+      </div>
+    </section>
+    <section id="projects" class="text-white">
+      <h1 class="col-span-2 m-8 text-center text-5xl font-medium text-accent">
+        My Projects
+      </h1>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="rounded-xl bg-[#2A2930] p-3 text-center flex flex-col justify-center gap-3">
+          <img src="img/allora.png" alt="E-commerce" class="rounded-2xl" />
+          <h3 class="my-3 text-xl">Allora</h3>
+          <p>A modern E-commerce platform built with Laravel.</p>
+          <div class="my-4 flex gap-2 items-center">
+            <a href="https://github.com/Raazkatwal/Allora" target="_blank"
+              class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+            >
+              View More
+            </a>
+            <button
+              class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
+            >
+              View Live
+            </button>
+          </div>
+        </div>
+        <div class="rounded-xl bg-[#2A2930] p-3 text-center flex flex-col justify-center gap-3">
+          <img src="img/samparka.png" alt="Chat app" class="rounded-2xl" />
+          <h3 class="my-3 text-xl">Samparka</h3>
+          <p>A Simple chatting platform built with Laravel and Reverb.</p>
+          <div class="my-4 flex gap-2 items-center">
+            <a href="https://github.com/Raazkatwal/Samparka"
+              class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+            >
+              View More
+            </a>
+            <button
+              class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
+            >
+              View Live
+            </button>
+          </div>
+        </div>
+        <div class="rounded-xl bg-[#2A2930] p-3 text-center flex flex-col justify-center gap-3">
+          <img src="img/calculator.png" alt="Calculator" class="rounded-2xl" />
+          <h3 class="my-3 text-xl">Tip Calculator</h3>
+          <p>A simple Tip Calculator built with JavaScript.</p>
+          <div class="my-4 flex gap-2 items-center">
+            <a href="https://github.com/Raazkatwal/tip-calculator" target="_blank"
+              class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+            >
+              View More
+            </a>
+            <a href="https://raazkatwal.github.io/tip-calculator/" target="_blank"
+              class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
+            >
+              View Live
+            </a>
+          </div>
+        </div>
+        <div class="col-span-3 flex justify-center items-center m-4">
+          <a href="https://github.com/Raazkatwal?tab=repositories" target="_blank"
+          class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+          >
+          View More <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
       </div>
     </section>
   </body>
