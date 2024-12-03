@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no"
+    />
     <title>Raj Katwal | Portfolio</title>
     <script
       src="https://kit.fontawesome.com/a3c06e4acc.js"
@@ -15,13 +18,11 @@
   </head>
 
   <body class="bg-background font-[ubuntu]">
-    <main class="px-20 py-5">
-      <div
-        class="absolute -left-20 -top-32 z-[999] h-96 w-96 rounded-full bg-gradient-to-tl from-accent to-background opacity-50 blur-3xl"
-      ></div>
+    <main class="px-5 py-5 md:px-20">
+      <div class="bg-blob mg:-left-20 mg:-top-32 -left-48 -top-56"></div>
       <nav
         id="navbar"
-        class="fixed left-0 top-0 z-50 flex h-10 w-screen items-center justify-between px-20 py-10"
+        class="fixed left-0 top-0 z-50 flex h-10 w-screen items-center justify-between px-5 py-8 md:px-20 md:py-10"
       >
         <a href="#home" class="flex w-20 items-center justify-center">
           <svg viewBox="0 0 150 60.52385" class="looka-1j8o68f">
@@ -31,29 +32,58 @@
             />
           </svg>
         </a>
-
-        <div
-          class="flex items-center space-x-4 font-semibold uppercase text-white"
-        >
+        <div class="text-3xl text-white lg:hidden" id="menu-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="lg:nav-links hidden">
           <a href="#home" class="text-accent"> Home </a>
           <a href="#about" class="hover:text-accent"> About </a>
           <a href="#projects" class="hover:text-accent"> Projects </a>
           <a href="#contact" class="hover:text-accent"> Contact </a>
-          <a href="#contact"
-            ><button
-              class="rounded-full border-2 border-accent bg-accent px-8 py-2 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
-            >
-              Hire me
-            </button>
+          <a href="#contact"><button class="btn">Hire me</button> </a>
+        </div>
+        <div
+          id="mbl-nav"
+          class="absolute -right-[70rem] top-0 flex h-screen w-full flex-col bg-[#222222] shadow-2xl shadow-black transition-all duration-300 ease-linear lg:hidden"
+        >
+          <i
+            class="fa-solid fa-x border-b-2 border-stone-700 p-5 font-semibold text-white"
+          ></i>
+          <a
+            href="#home"
+            class="mbl-links border-b-2 border-stone-700 p-5 text-white"
+          >
+            Home
+          </a>
+          <a
+            href="#about"
+            class="mbl-links border-b-2 border-stone-700 p-5 text-white"
+          >
+            About
+          </a>
+          <a
+            href="#projects"
+            class="mbl-links border-b-2 border-stone-700 p-5 text-white"
+          >
+            Projects
+          </a>
+          <a
+            href="#contact"
+            class="mbl-links border-b-2 border-stone-700 p-5 text-white"
+          >
+            Contact
+          </a>
+          <a href="#contact" class="mbl-links p-5"
+            ><button class="btn">Hire me</button>
           </a>
         </div>
       </nav>
       <main
-        class="mt-20 grid h-[90vh] grid-cols-2 place-items-center"
+        class="mt-20 grid h-[90vh] grid-cols-1 place-items-center lg:grid-cols-2"
         id="home"
       >
-        <div>
-          <h1 class="text-8xl font-semibold text-white">
+        <div class="text-center lg:text-left">
+          <h1 class="text-2xl font-semibold text-white md:text-6xl lg:text-8xl">
             Hello I'm
             <div class="my-4 text-accent">Raj Katwal</div>
           </h1>
@@ -61,51 +91,50 @@
             A Developer Dedicated to Crafting Beautiful, Functional Web
             Experiences
           </p>
-          <div class="mt-5 space-x-4">
-            <a
-              href="#"
-              class="rounded-full border-2 border-accent bg-accent px-8 py-4 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white"
-              >Hire me</a
+          <div class="mt-5 flex flex-col items-center lg:flex-row lg:gap-4">
+            <div
+              class="mb-5 flex flex-col items-center justify-center gap-4 lg:mb-0 lg:flex-row"
             >
-            <a
-              href="Raj_cv.pdf"
-              download="Raj_cv.pdf"
-              class="rounded-full border-2 border-accent bg-background px-8 py-4 uppercase text-white duration-300 ease-in-out hover:border-accent hover:bg-accent hover:text-black"
-              >Download CV <i class="fa-solid fa-download"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/profile.php?id=100090441970224"
-              target="_blank"
-              class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <a
-              href="https://github.com/Raazkatwal"
-              target="_blank"
-              class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-            <a
-              href="https://wa.me/+9779816314773"
-              target="_blank"
-              class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
-              ><i class="fa-brands fa-whatsapp"></i
-            ></a>
+              <a href="#contact" class="btn py-4">Hire me</a>
+              <a href="Raj_cv.pdf" download="Raj_cv.pdf" class="invert-btn"
+                >Download CV <i class="fa-solid fa-download"></i
+              ></a>
+            </div>
+            <div class="flex items-center gap-4">
+              <a
+                href="https://www.facebook.com/profile.php?id=100090441970224"
+                target="_blank"
+                class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a
+                href="https://github.com/Raazkatwal"
+                target="_blank"
+                class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://wa.me/+9779816314773"
+                target="_blank"
+                class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
+                ><i class="fa-brands fa-whatsapp"></i
+              ></a>
+            </div>
           </div>
         </div>
         <img
           src="img/raj.jpeg"
           alt="image"
-          class="h-[30rem] w-[30rem] rounded-full object-cover"
+          class="2xl row-start-1 h-60 w-60 rounded-full object-cover lg:row-start-auto lg:h-[30rem] lg:w-[30rem]"
         />
       </main>
       <section
-        class="grid grid-cols-2 place-items-center gap-2 text-white"
+        class="flex flex-col items-center justify-center text-white lg:grid lg:grid-cols-2 lg:place-items-center"
         id="about"
       >
-        <h1 class="col-span-2 text-5xl font-medium text-accent">About Me</h1>
-        <div>
-          <p class="mb-10 text-justify text-lg">
+        <h1 class="section-heading order-1 lg:order-none">About Me</h1>
+        <div class="order-3 lg:order-none">
+          <p class="mb-10 text-justify text-sm lg:text-lg">
             Hello! I'm Raj, a passionate developer dedicated to crafting
             beautiful, functional web experiences. I have a keen interest in
             building intuitive and impactful digital solutions. My journey in
@@ -117,10 +146,7 @@
             want to brainstorm ideas, I'm always open to connecting and
             collaborating on exciting new ventures.
           </p>
-          <a
-            href="Raj_cv.pdf"
-            download="Raj_cv.pdf"
-            class="rounded-full border-2 border-accent bg-background px-8 py-4 uppercase text-white duration-300 ease-in-out hover:border-accent hover:bg-accent hover:text-black"
+          <a href="Raj_cv.pdf" download="Raj_cv.pdf" class="invert-btn"
             >Download CV <i class="fa-solid fa-download"></i
           ></a>
         </div>
@@ -128,14 +154,16 @@
           src="https://lottie.host/251cfe1d-3f24-425f-ab49-916626a54c28/l9MBsGiREf.json"
           background="##FFFFFF"
           speed="1"
-          style="width: 500px; height: 380px"
+          class="order-2 h-[380px] w-[500px] max-lg:h-64 max-lg:w-64 lg:order-none"
           loop
           autoplay
           direction="1"
           mode="normal"
         ></lottie-player>
 
-        <div class="col-span-2 mt-5 flex space-x-16">
+        <div
+          class="order-4 col-span-2 mt-10 flex flex-col justify-center gap-10 md:flex-row"
+        >
           <div>
             <div
               class="grid h-32 w-32 place-items-center rounded-full bg-[conic-gradient(#00fe9b_306deg,_#2A2930_0deg)] before:col-[1_/_-1] before:row-[1_/_-1] before:h-24 before:w-24 before:self-center before:rounded-full before:bg-background before:content-['']"
@@ -171,22 +199,15 @@
         </div>
       </section>
       <section
-        class="my-14 grid grid-cols-2 place-items-center gap-16 text-white"
+        class="my-14 flex flex-col place-items-center gap-16 text-white lg:grid lg:grid-cols-2"
       >
-        <h1 class="col-span-2 text-5xl font-medium text-accent">
-          My Education
-        </h1>
+        <h1 class="section-heading">My Education</h1>
         <div class="flex gap-3">
-          <div
-            class="relative top-full grid h-20 w-36 place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
-          >
+          <div class="graduation-logo">
             <i class="fa-solid fa-graduation-cap"></i>
           </div>
           <div>
-            <span
-              class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
-              >2014 - 2020</span
-            >
+            <span class="education-time">2014 - 2020</span>
             <h3 class="text-2xl font-medium">School</h3>
             <p>
               I have completed my school in Pokhariya secondary school in Nepal.
@@ -195,16 +216,11 @@
           </div>
         </div>
         <div class="flex gap-3">
-          <div
-            class="relative top-full grid h-20 w-[14.5rem] place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
-          >
+          <div class="graduation-logo">
             <i class="fa-solid fa-graduation-cap"></i>
           </div>
           <div>
-            <span
-              class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
-              >2020 - 2022</span
-            >
+            <span class="education-time">2020 - 2022</span>
             <h3 class="text-2xl font-medium">High School</h3>
             <p>
               I completed my high school education at Pokhariya Secondary School
@@ -214,16 +230,11 @@
           </div>
         </div>
         <div class="flex gap-3">
-          <div
-            class="relative top-full grid h-20 w-[12rem] place-items-center rounded-full bg-accent text-3xl text-black after:absolute after:top-[98%] after:h-full after:w-1 after:bg-accent after:content-['']"
-          >
+          <div class="graduation-logo">
             <i class="fa-solid fa-graduation-cap"></i>
           </div>
           <div>
-            <span
-              class="my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black"
-              >2023 - Present</span
-            >
+            <span class="education-time">2023 - Present</span>
             <h3 class="text-2xl font-medium">Bachelor</h3>
             <p>
               I am currently pursuing my bachelor's degree in B.Sc. CSIT at
@@ -234,10 +245,8 @@
         </div>
       </section>
       <section id="projects" class="text-white">
-        <h1 class="col-span-2 m-8 text-center text-5xl font-medium text-accent">
-          My Projects
-        </h1>
-        <div class="grid grid-cols-3 gap-4">
+        <h1 class="section-heading">My Projects</h1>
+        <div class="flex flex-col gap-4 md:grid md:grid-cols-2 lg:grid-cols-3">
           <div
             class="flex flex-col justify-center gap-3 rounded-xl bg-[#2A2930] p-3 text-center"
           >
@@ -248,13 +257,11 @@
               <a
                 href="https://github.com/Raazkatwal/Allora"
                 target="_blank"
-                class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+                class="btn px-4 py-2 normal-case"
               >
                 View More
               </a>
-              <button
-                class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
-              >
+              <button class="invert-btn px-4 py-2 normal-case">
                 View Live
               </button>
             </div>
@@ -268,13 +275,12 @@
             <div class="my-4 flex items-center gap-2">
               <a
                 href="https://github.com/Raazkatwal/Samparka"
-                class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+                target="_blank"
+                class="btn px-4 py-2 normal-case"
               >
                 View More
               </a>
-              <button
-                class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
-              >
+              <button class="invert-btn px-4 py-2 normal-case">
                 View Live
               </button>
             </div>
@@ -293,24 +299,26 @@
               <a
                 href="https://github.com/Raazkatwal/tip-calculator"
                 target="_blank"
-                class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+                class="btn px-4 py-2 normal-case"
               >
                 View More
               </a>
               <a
                 href="https://raazkatwal.github.io/tip-calculator/"
                 target="_blank"
-                class="rounded-full border-2 border-accent bg-background px-4 py-2 text-white duration-300 hover:border-background hover:bg-accent hover:text-black"
+                class="invert-btn px-4 py-2 normal-case"
               >
                 View Live
               </a>
             </div>
           </div>
-          <div class="col-span-3 m-4 flex items-center justify-center">
+          <div
+            class="m-4 flex items-center justify-center md:col-span-2 lg:col-span-3"
+          >
             <a
               href="https://github.com/Raazkatwal?tab=repositories"
               target="_blank"
-              class="rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
+              class="btn px-4 py-2 normal-case"
             >
               View More <i class="fa-brands fa-github"></i>
             </a>
@@ -318,10 +326,8 @@
         </div>
       </section>
       <section id="contact" class="text-white">
-        <h1 class="col-span-2 m-8 text-center text-5xl font-medium text-accent">
-          Contact Me
-        </h1>
-        <div class="grid grid-cols-2">
+        <h1 class="section-heading">Contact Me</h1>
+        <div class="flex flex-col lg:grid lg:grid-cols-2">
           <lottie-player
             class="w-full"
             src="https://lottie.host/44282e9a-f4a3-4e53-8f67-fa29eae520be/NRKcMt6YKL.json"
@@ -349,10 +355,7 @@
               placeholder="Enter our Message"
               class="rounded-md bg-slate-700 px-4 py-3 text-xl outline-none"
             ></textarea>
-            <button
-              type="submit"
-              class="w-44 rounded-full border-2 border-accent bg-accent px-4 py-2 text-black duration-300 hover:border-accent hover:bg-background hover:text-white"
-            >
+            <button type="submit" class="btn w-44 px-4 py-2 normal-case">
               Send Message
             </button>
           </form>
@@ -360,7 +363,7 @@
       </section>
     </main>
     <footer class="mt-16 bg-zinc-700 px-20 py-5 text-white">
-      <div class="flex justify-between">
+      <div class="flex flex-col justify-between md:flex-row">
         <div class="space-y-2">
           <a href="#home" class="flex w-20 items-center justify-center">
             <svg viewBox="0 0 150 60.52385" class="looka-1j8o68f">
@@ -370,12 +373,16 @@
               />
             </svg>
           </a>
-          <div><i class="fa-solid fa-envelope"></i> raazkatwal5@gmail.com</div>
-          <div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-envelope"></i> raazkatwal5@gmail.com
+          </div>
+          <div class="flex items-center gap-2">
             <i class="fa-solid fa-location-dot"></i> Biratnagar-8, Morang
           </div>
         </div>
-<div class="flex items-center space-x-4">
+        <div
+          class="my-5 flex flex-col items-center gap-4 md:order-2 md:flex-row lg:mt-0"
+        >
           <a
             href="https://www.facebook.com/profile.php?id=100090441970224"
             class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
@@ -391,23 +398,24 @@
             href="https://wa.me/+9779816314773"
             target="_blank"
             class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
-            ><i class="fa-brands fa-whatsapp"></i
-          ></a><a
+            ><i class="fa-brands fa-whatsapp"></i></a
+          ><a
             href="mailto:raazkatwal5@gmail.com"
             target="_blank"
             class="text-4xl text-accent duration-300 ease-in-out hover:text-[#359e76]"
             ><i class="fa-solid fa-envelope"></i
           ></a>
         </div>
-        <div class="flex items-center space-x-4">
+        <div class="flex flex-col items-center gap-4 lg:flex-row">
           <a href="#home" class="hover:text-accent"> Home </a>
           <a href="#about" class="hover:text-accent"> About </a>
           <a href="#projects" class="hover:text-accent"> Projects </a>
           <a href="#contact" class="hover:text-accent"> Contact </a>
         </div>
-        
       </div>
-      <div class="h-10 mt-8 text-center">&copy; 2024 Raj Katwal | All rights reserved.</div>
+      <div class="mt-8 h-10 text-center">
+        &copy; 2024 Raj Katwal | All rights reserved.
+      </div>
     </footer>
   </body>
 </html>

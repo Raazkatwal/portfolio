@@ -3,6 +3,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components{
+  .btn{
+    @apply rounded-full border-2 border-accent bg-accent px-8 py-2 uppercase text-black duration-300 ease-in-out hover:border-accent hover:bg-background hover:text-white
+  }
+  .invert-btn{
+    @apply rounded-full border-2 border-accent bg-background px-8 py-4 uppercase text-white duration-300 ease-in-out hover:border-accent hover:bg-accent hover:text-black
+  }
+  .education-time{
+    @apply my-4 grid h-10 w-40 place-items-center rounded-full bg-accent text-black
+  }
+  .graduation-logo{
+    @apply relative top-full grid h-min place-items-center rounded-full bg-accent px-3 py-4 text-3xl text-black after:absolute after:top-full after:h-full after:w-1 after:bg-accent after:content-['']
+  }
+  .section-heading{
+    @apply col-span-2 m-8 text-center md:text-5xl font-medium text-accent text-3xl
+  }
+  .nav-links{
+    @apply flex items-center space-x-4 font-semibold uppercase text-white
+  }
+  .bg-blob{
+    @apply absolute z-[999] pointer-events-none h-96 w-96 rounded-full bg-gradient-to-tl from-accent to-background opacity-50 blur-3xl
+  }
+}
+
 :root {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
